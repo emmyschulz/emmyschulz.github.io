@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
+
+:root { 
+    --bg-color:#F7B2AD;
+    --text-color: #042A2B; 
+    --highlight-color-one: #CA054D;
+    --highlight-color-two: #A5D8FF;
+}
+body { 
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
 
 
 /* Hero Section */
 .hero-section {
-    background: black;
+    background:var(--bg-color);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,7 +29,13 @@
 
 .hero-section h1 {
     font-weight: 700;
+      font-family: "Cherry Bomb One", system-ui; 
 }
+
+h2,h3,h4,h5 {
+    font-family: "Cherry Bomb One", system-ui; 
+}
+
 
 .hero-section .lead {
     font-size: 1.5rem;
@@ -26,6 +45,13 @@
     height: 300px;
     object-fit: cover;
     border-radius: 0;
+}
+.work-card {
+    font-family: "Miltonian Tattoo", serif;
+}
+
+.btn {
+    background-color: #F7B2AD;
 }
 
 h2 {
