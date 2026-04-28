@@ -63,24 +63,13 @@ h2 {
 }
 
 .footer {
-	background-image: url("../images/polkadots.png"); /* change to your image */
+	background-image: url("../images/b.png"); /* change to your image */
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 
 	padding: 60px 0;
 	position: relative;
-}
-
-/* optional: dark overlay so text is readable */
-.footer::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
 }
 
 /* keep text above overlay */
