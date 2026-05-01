@@ -1,0 +1,486 @@
+/*
+#99B87D light green
+#D99DA0 pink
+#5D7A5C green
+#ECF0E6 off white
+#0E0D0B black 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin:0;
+    overflow-x:hidden;
+}
+h1{
+   margin-top: 0;
+    font-size: 6vw;
+    color:#5D7A5C;
+    font-family: "Gravitas one";
+    font-weight: 400;
+  font-style: normal;
+}
+h2 {
+    clear: both;
+       font-family: "Gravitas one";
+    font-weight: 400;
+  font-style: normal;
+  color: #5D7A5C;
+ 
+}
+h2 a {
+    color: #D99DA0;
+    text-decoration: none;
+}
+h2 a:hover {
+    color: antiquewhite;
+    font-style: italic;
+}
+#wrapper {
+    width: 100%;
+    /*top left bottom left*/
+    margin: 0 auto;
+    background-color: #5D7A5C;
+}
+#header,
+#footer {
+    padding: 1em;
+    background-color: #5D7A5C;
+}
+#footer {
+    clear: both; 
+}
+#nav {
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+}
+#nav li{
+    display: inline-block;
+    margin-top: 0.25em 
+}
+#nav li a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #D99DA0;
+    padding: 0.5em 1em;
+    color: white; 
+    border-radius: 0.5em;
+}
+#nav li a:hover {
+    background-color: #99B87D;
+}
+#nav li a.active {
+    background-color:#99B87D;
+}
+#content {
+    padding: 1em;
+    line-height: 1.25em;
+}
+
+/* Make header take full width of screen */
+#header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* Reset the wrapper’s default alignment so banner can stretch full width */
+#wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make the banner fill the entire top of the screen */
+.banner-img {
+  width: 100vw;          /* spans full browser width */
+  height: 300px;         /* adjust height to preference */
+  object-fit: cover;     /* no stretching */
+  display: block;
+  margin: 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* keeps it perfectly centered */
+}
+
+/* Center your navigation nicely below */
+#nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+  margin: 0;
+  background: transparent;
+  backdrop-filter: none;
+}
+/* Full-screen image section */
+.full-photo {
+  width: 100vw;           /* full browser width */
+  height: 100vh;          /* full screen height */
+  object-fit: cover;      /* prevents stretching */
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#content {
+  padding: 0;
+  margin: 0;
+}
+.intro-text {
+  color: #99B87D;
+  font-size: 1.3em;
+  text-align: center;
+  max-width: 800px;
+  margin: 40px auto;
+  line-height: 1.6;
+}
+#stay-connected {
+  text-align: center;
+  margin: 60px 0;
+}
+
+#stay-connected h2 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: "Gravitas One", serif;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  background-color: #5D7A5C;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-btn:hover {
+  background-color: #88A882;
+  transform: scale(1.05);
+}
+#stay-connected {
+  text-align: center;
+  margin: 60px 0;
+}
+
+#stay-connected h2 {
+  color: #99B87D;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: "Gravitas One", serif;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #5d7a5c;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-btn:hover {
+  background-color: #88a882;
+  transform: scale(1.05);
+}
+
+.social-btn i {
+  font-size: 1.2em;
+}
+#footer {
+  text-align: center;       /* centers all text inside the footer */
+  padding: 20px 0;          /* adds some space above and below */
+  color: #D99DA0;           /* pink color - you can adjust the hex if you want a different pink */
+  font-family: "Gravitas One", serif; /* optional: match your heading font */
+  font-size: 1em;           /* adjust size if needed */
+}
+
+#footer ul {
+  list-style: none;        /* remove bullets from the list */
+  padding: 0;
+  margin: 10px 0 0 0;      /* spacing above links */
+}
+
+#footer ul li {
+  display: inline;         /* makes list items horizontal */
+  margin: 0 10px;          /* spacing between items */
+}
+
+#footer ul li a {
+  color: #D99DA0;          /* same pink for the link */
+  text-decoration: none;   /* removes underline */
+  transition: color 0.3s;
+}
+
+#footer ul li a:hover {
+  color: #D99DA0;          /* slightly lighter pink on hover */
+}
+
+.project-list {
+  list-style: none;      /* removes bullets */
+  padding: 0;
+  margin: 20px 0;
+}
+
+.project-list li {
+  margin: 10px 0;
+}
+
+.project-list a {
+  text-decoration: none;
+  color: #ECF0E6;        /* your theme color */
+  font-weight: 500;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.project-list a:hover {
+  color: #88A882;        /* hover color */
+  transform: scale(1.02);
+}
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+  padding: 0 40px;
+}
+
+.project-card {
+  background-color: #fdfdfd;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  color: #5D7A5C; /* your green accent */
+  margin-top: 0;
+  font-size: 1.4em;
+}
+
+.project-card p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #D99DA0; /* your pink color */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #D99DA0;
+}
+/* Fix space under banner */
+#header {
+  margin: 0;
+  padding: 0;
+}
+
+.banner-img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjust wrapper spacing */
+#wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+/* Projects section layout fix */
+#content {
+  padding-top: 80px;  /* pushes the "Projects" heading lower */
+  background-color: #5D7A5C; /* optional: your green section background */
+  padding-bottom: 60px;
+  border-radius: 0;
+}
+
+/* Projects heading + paragraph */
+#content h2 {
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 0;        /* removes default margin that caused cutoff */
+  margin-bottom: 15px;
+  font-family: 'Gravitas One', serif;
+  letter-spacing: 1px;
+}
+
+#content p {
+  color:#D99DA0;
+  font-size: 1.2em;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  line-height: 1.5;
+}
+#content {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.resume-viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  width: 100%;
+}
+
+iframe {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* WRITING PAGE STYLES */
+#content {
+  padding-top: 120px;
+  text-align: center;
+}
+
+#content h2 {
+  color: white;
+  font-size: 3em;
+  font-family: "Gravitas One", serif;
+  margin-bottom: 10px;
+}
+
+#content p {
+  color: #D99DA0;
+  font-size: 1.2em;
+  margin-bottom: 50px;
+}
+
+.writing-piece {
+  margin: 60px auto;
+  padding: 40px;
+  width: 80%;
+  max-width: 900px;
+  background-color: #f8f8f8;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.writing-piece h3 {
+  color: #5D7A5C;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.writing-piece p {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.05em;
+  line-height: 1.6;
+}
+
+iframe {
+  border: none;
+  border-radius: 12px;
+  width: 100%;
+  height: 600px;
+  display: block;
+  margin: 0 auto;
+}
+/* PICTURES PAGE STYLES */
+#content h2 {
+  color: white;
+  font-size: 3em;
+  font-family: "Gravitas One", serif;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#content p {
+  color: #D99DA0;
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Photo Grid Section */
+#photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 15px; /* space between images */
+  justify-items: center;
+  margin-top: 40px;
+  padding: 0 60px 60px;
+}
+
+#photo-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#photo-grid img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  #photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #photo-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
