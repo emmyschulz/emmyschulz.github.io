@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cherry+Bomb+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
 
+
 :root { 
     --bg-color:#ecf0e6;
     --text-color: #510D0A; 
     --highlight-color-one: #5d7a5c;
     --highlight-color-two: #d99da0;
+    --highlight-color-three:#99B87D; 
 }
 body { 
-    background-color: var(--bg-color);
+    background-color: var(--highlight-color-one);
     color: var(--text-color);
 }
 
@@ -45,44 +47,101 @@ body {
 
 .intro-text {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 25px auto;
     font-size: 1.2rem;
-    line-height: 1.6;
-    color:var(--highlight-color-one);
+    line-height: 1.8;
+    color: var(--bg-color);
 }
 .about-section {
-    min-height: 100vh; /* full screen */
-    padding-top: 80px; /* space for fixed navbar */
-    padding-bottom: 40px;
+    min-height: 100vh;
+    padding: 120px 20px 100px;
 }
 
+.full-photo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+}
+.about-text {
+    padding: 60px 20px;
+}
 /* Keep content centered vertically */
 .about-section .container {
     max-width: 800px;
 }
-
-
-
-
-
-.footer {
-	background-image: url("../images/b.png"); /* change to your image */
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-
-	padding: 60px 0;
-	position: relative;
+.full-photo {
+    margin-bottom: 60px;
 }
 
-/* keep text above overlay */
-.footer .container-fluid {
-	position: relative;
-	z-index: 1;
+/*stay connected*/
+#stay-connected {
+    background-color: var(--highlight-color-one); /* your green */
+    padding: 80px 20px;
+    text-align: center;
 }
-.footer {
-	min-height: 200px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+#stay-connected h2 {
+    font-family: 'Gravitas One', serif;
+    color: var(--highlight-color-three); /* off-white */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.social-btn {
+    background-color: var(--highlight-color-two); /* pink */
+    color: var(--bg-color); /* off-white text */
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.social-btn:hover {
+    background-color: var(--highlight-color-three); /* lighter green */
+    transform: translateY(-3px);
+}
+.social-btn i {
+    font-size: 1.2rem;
+}
+
+
+/*footer*/
+#footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #D99DA0;
+  font-family: "Gravitas One", serif;
+  font-size: 1em;
+  background-color: #5D7A5C;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+#footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#footer ul li a {
+  color: #D99DA0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#footer ul li a:hover {
+  color: #ECF0E6;
 }
