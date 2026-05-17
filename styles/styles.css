@@ -82,7 +82,7 @@ body {
     text-align: center;
 }
 #stay-connected h2 {
-    font-family: 'Gravitas One', serif;
+    font-family: 'Playfair Display', serif;
     color: var(--highlight-color-three); /* off-white */
     font-size: 2.5rem;
     margin-bottom: 30px;
@@ -120,7 +120,7 @@ body {
   text-align: center;
   padding: 20px 0;
   color: #D99DA0;
-  font-family: "Gravitas One", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 1em;
   background-color: #5D7A5C;
 }
@@ -144,4 +144,28 @@ body {
 
 #footer ul li a:hover {
   color: #ECF0E6;
+}
+.page-header {
+    padding-top: 140px;
+    padding-bottom: 60px;
+}
+
+.page-header h1 {
+    font-size: 4rem;
+    font-family: "Playfair Display", serif;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    height: 300px;
+    object-fit: cover;
 }
