@@ -150,16 +150,9 @@ body {
 
 /*this is the about me banner section*/
 
-.intro-text {
-    max-width: 700px;
-    margin: 25px auto;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--bg-color);
-}
+
 .about-section {
-    min-height: 100vh;
-    padding: 120px 20px 100px;
+    padding: 60px 20px 30px;
 }
 
 .full-photo {
@@ -167,10 +160,19 @@ body {
     height: 100vh;
     object-fit: cover;
     display: block;
-    margin: 0;
+    margin-bottom: 25px;
 }
+
 .about-text {
-    padding: 60px 20px;
+    padding: 10px 20px 20px;
+}
+
+.intro-text {
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--bg-color);
 }
 /* Keep content centered vertically */
 .about-section .container {
@@ -183,7 +185,7 @@ body {
 /*stay connected*/
 #stay-connected {
     background-color: var(--highlight-color-one); /* your green */
-    padding: 70px 20px;
+    padding: 40px 20px;
     text-align: center;
 }
 #stay-connected h2 {
@@ -223,7 +225,7 @@ body {
 /*footer*/
 #footer {
   text-align: center;
-  padding: 20px;
+  padding: 12px;
   color: #D99DA0;
   font-family: 'Playfair Display', serif;
   font-size: 1em;
