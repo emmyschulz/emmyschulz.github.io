@@ -42,6 +42,111 @@ body {
     font-size: 10rem;
     color: var(--highlight-color-one); /* muted green */
 }
+/*this is for the navigation styling*/
+
+
+.navbar {
+    background-color: var(--highlight-color-one);
+    backdrop-filter: blur(10px);
+    padding: 18px 40px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px var(--highlight-color-three);
+}
+
+/* Brand Name */
+
+.nav-logo {
+    height: 42px;
+    width: auto;
+}
+
+.navbar-brand:hover {
+    opacity: 0.7;
+}
+
+/* Nav Links */
+
+.navbar-nav {
+    gap: 18px;
+}
+
+.nav-link {
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--highlight-color-three) !important;
+    position: relative;
+    transition: all 0.3s ease;
+    padding-bottom: 4px;
+}
+
+/* Underline Hover Animation */
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1.5px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    opacity: 0.75;
+}
+
+/* Active Page */
+
+.nav-link.active {
+    color: var(--bg-color) !important;
+    font-weight: 700;
+}
+
+.nav-link.active::after {
+    width: 100%;
+    background-color: var(--bg-color);
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 8px 25px var(--bg-color);
+}
+
+.dropdown-item {
+    font-family: "Playfair Display", serif;
+    transition: 0.2s ease;
+    border-radius: 8px;
+}
+
+.dropdown-item:hover {
+    background-color: #f5f5f5;
+}
+
+/* Mobile */
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Space Below Fixed Navbar */
+
+body {
+    padding-top: 90px;
+}
 
 /*this is the about me banner section*/
 
@@ -78,7 +183,7 @@ body {
 /*stay connected*/
 #stay-connected {
     background-color: var(--highlight-color-one); /* your green */
-    padding: 80px 20px;
+    padding: 70px 20px;
     text-align: center;
 }
 #stay-connected h2 {
@@ -118,7 +223,7 @@ body {
 /*footer*/
 #footer {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
   color: #D99DA0;
   font-family: 'Playfair Display', serif;
   font-size: 1em;
@@ -145,6 +250,7 @@ body {
 #footer ul li a:hover {
   color: #ECF0E6;
 }
+/*this is for your projects page*/
 .page-header {
     padding-top: 140px;
     padding-bottom: 60px;
