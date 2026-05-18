@@ -142,11 +142,7 @@ body {
     box-shadow: none;
 }
 
-/* Space Below Fixed Navbar */
 
-body {
-    padding-top: 90px;
-}
 
 /*this is the about me banner section*/
 
@@ -182,7 +178,7 @@ body {
     margin-bottom: 60px;
 }
 
-/*stay connected*/
+/*stay connected section*/
 #stay-connected {
     background-color: var(--highlight-color-one); /* your green */
     padding: 40px 20px;
@@ -252,22 +248,15 @@ body {
 #footer ul li a:hover {
   color: #ECF0E6;
 }
-/*this is for your projects page*/
-
-
-.projects-section {
-    padding: 140px 40px 80px;
-}
-
-.projects-header {
-    margin-bottom: 70px;
-}
+/*this is for your PROJECT page*/
 
 .projects-header h1 {
     font-family: "Playfair Display", serif;
     font-size: 5rem;
     color: var(--bg-color);
     margin-bottom: 20px;
+     padding: 140px 20px 80px;
+    text-align: center;
 }
 
 .projects-header p {
@@ -343,6 +332,106 @@ body {
 
     .projects-header h1 {
         font-size: 3.5rem;
+    }
+
+}
+
+/*RESUME PAGE*/
+
+.resume-section {
+    padding: 140px 20px 80px;
+    text-align: center;
+}
+
+/* HEADER */
+
+.resume-header {
+    margin-bottom: 60px;
+}
+
+.resume-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    color: var(--bg-color);
+    margin-bottom: 20px;
+}
+
+.resume-header p {
+    color: var(--bg-color);
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+/* PDF CONTAINER */
+
+.resume-container {
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 30px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* PDF FRAME */
+
+.resume-frame {
+    width: 100%;
+    height: 850px;
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* BUTTONS */
+
+.resume-buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.resume-btn {
+    background-color: var(--highlight-color-two);
+    color: var(--bg-color);
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: var(--highlight-color-three);
+    transform: translateY(-3px);
+}
+
+/* SECONDARY BUTTON */
+
+.secondary-btn {
+    background-color: transparent;
+    border: 1.5px solid var(--bg-color);
+}
+
+.secondary-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .resume-header h1 {
+        font-size: 3.5rem;
+    }
+
+    .resume-frame {
+        height: 600px;
     }
 
 }
