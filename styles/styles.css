@@ -103,7 +103,7 @@ body {
 
 /* Active Page */
 
-.nav-link.active {
+.navbar .navbar-nav .nav-link.active {
     color: var(--bg-color) !important;
     font-weight: 700;
 }
