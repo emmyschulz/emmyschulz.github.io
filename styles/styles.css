@@ -253,27 +253,96 @@ body {
   color: #ECF0E6;
 }
 /*this is for your projects page*/
-.page-header {
-    padding-top: 140px;
-    padding-bottom: 60px;
+
+
+.projects-section {
+    padding: 140px 40px 80px;
 }
 
-.page-header h1 {
-    font-size: 4rem;
+.projects-header {
+    margin-bottom: 70px;
+}
+
+.projects-header h1 {
     font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    color: var(--bg-color);
+    margin-bottom: 20px;
 }
 
-.card {
-    border: none;
-    box-shadow: 0 4px 20px rgba(0,0,0,.08);
-    transition: transform .3s ease;
+.projects-header p {
+    color: var(--bg-color);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.8;
 }
 
-.card:hover {
+/* GRID */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+/* CARDS */
+
+.project-card {
+    background-color: rgba(255,255,255,0.08);
+    border-radius: 30px;
+    padding: 35px;
+    backdrop-filter: blur(10px);
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.project-card:hover {
     transform: translateY(-8px);
+    background-color: rgba(255,255,255,0.12);
 }
 
-.card img {
-    height: 300px;
-    object-fit: cover;
+.project-card h3 {
+    font-family: "Playfair Display", serif;
+    color: var(--bg-color);
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+.project-card p {
+    color: var(--bg-color);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+
+.project-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--highlight-color-two);
+    color: var(--bg-color);
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.project-btn:hover {
+    background-color: var(--highlight-color-three);
+    transform: translateY(-2px);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .projects-section {
+        padding: 120px 20px 60px;
+    }
+
+    .projects-header h1 {
+        font-size: 3.5rem;
+    }
+
 }
