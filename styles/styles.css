@@ -9,6 +9,7 @@
     --highlight-color-two: #d99da0;
     --highlight-color-three:#99B87D; 
 }
+
 body { 
     background-color: var(--highlight-color-one);
     color: var(--text-color);
@@ -248,23 +249,25 @@ body {
 #footer ul li a:hover {
   color: #ECF0E6;
 }
+
 /*this is for your PROJECT page*/
 
 .projects-header h1 {
     font-family: "Playfair Display", serif;
     font-size: 5rem;
     color: var(--bg-color);
-    margin-bottom: 20px;
-     padding: 140px 20px 80px;
+    margin: 0;
+    padding-top: 140px;
     text-align: center;
 }
 
 .projects-header p {
+    margin-top: 10px; /* controls the dumb ass gap that ive been trying to get rid of for an hour*/
+    font-size: 1.2;
     color: var(--bg-color);
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: auto;
     line-height: 1.8;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 /* GRID */
@@ -434,4 +437,62 @@ body {
         height: 600px;
     }
 
+}
+
+/* WRITING PAGE WORK HERE */
+
+.writing-section {
+    padding: 140px 40px 80px;
+}
+
+/* HEADER */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.page-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    color: var(--bg-color);
+}
+
+.page-header p {
+    color: var(--bg-color);
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* WRITING PIECES */
+
+.writing-piece {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.writing-piece h3 {
+    font-family: "Playfair Display", serif;
+    color: var(--bg-color);
+    margin-bottom: 10px;
+}
+
+.writing-piece p {
+    color: var(--bg-color);
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.7;
+}
+
+/* IFREAM FIX */
+
+.writing-piece iframe {
+    width: 80%;
+    max-width: 900px;
+    height: 600px;
+    border: none;
+    border-radius: 15px;
+    background: white;
 }
