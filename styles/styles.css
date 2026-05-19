@@ -8,6 +8,7 @@
     --highlight-color-one: #5d7a5c;
     --highlight-color-two: #d99da0;
     --highlight-color-three:#99B87D; 
+    --page-header-color:#99B87D; 
 }
 
 body { 
@@ -255,7 +256,7 @@ body {
 .projects-header h1 {
     font-family: "Playfair Display", serif;
     font-size: 5rem;
-    color: var(--bg-color);
+    color: var(--page-header-color);
     margin: 0;
     padding-top: 140px;
     text-align: center;
@@ -264,7 +265,7 @@ body {
 .projects-header p {
     margin-top: 10px; /* controls the dumb ass gap that ive been trying to get rid of for an hour*/
     font-size: 1.2;
-    color: var(--bg-color);
+    color: var(--highlight-color-two);
     line-height: 1.8;
     font-size: 1.2rem;
     text-align: center;
@@ -348,19 +349,15 @@ body {
 
 /* HEADER */
 
-.resume-header {
-    margin-bottom: 60px;
-}
-
 .resume-header h1 {
     font-family: "Playfair Display", serif;
     font-size: 5rem;
-    color: var(--bg-color);
+    color: var(--page-header-color);
     margin-bottom: 20px;
 }
 
 .resume-header p {
-    color: var(--bg-color);
+    color: var(--highlight-color-two);
     max-width: 700px;
     margin: auto;
     line-height: 1.8;
@@ -441,30 +438,28 @@ body {
 
 /* WRITING PAGE WORK HERE */
 
-.writing-section {
-    padding: 140px 40px 80px;
+.writing-header {
+    text-align: center;
+    padding: 120px 20px 50px;
+}
+
+.writing-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    color: var(--page-header-color);
+    margin-bottom: 10px;
+}
+
+.writing-header p {
+    color: var(--highlight-color-two);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 /* HEADER */
 
-.page-header {
-    text-align: center;
-    margin-bottom: 70px;
-}
-
-.page-header h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 5rem;
-    color: var(--bg-color);
-}
-
-.page-header p {
-    color: var(--bg-color);
-    max-width: 700px;
-    margin: auto;
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
 
 /* WRITING PIECES */
 
@@ -495,4 +490,37 @@ body {
     border: none;
     border-radius: 15px;
     background: white;
+}
+
+/*PHOTO PAGE HEREEEEEE*/
+
+.photos-header {
+    text-align: center;
+    padding: 120px 20px 50px;
+}
+
+.photos-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 5rem;
+    color: var(--page-header-color);
+    margin-bottom: 10px;
+}
+
+.photos-header p {
+    color: var(--highlight-color-two);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+.photo-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.03);
 }
